@@ -1,0 +1,31 @@
+# Database configuration
+database:
+  host: localhost
+  port: 5432
+  user: ai_agent
+  password: ${DB_PASSWORD}
+  name: ai_agent_db
+  dialect: postgresql
+
+# API configuration
+api:
+  base_url: https://api.example.com
+  timeout: 30
+  retries: 3
+
+# Jenkins configuration
+jenkins:
+  url: https://jenkins.example.com
+  username: ${JENKINS_USER}
+  token: ${JENKINS_TOKEN}
+
+# GitHub configuration
+github:
+  base_url: https://api.github.com
+  token: ${GITHUB_TOKEN}
+
+# JFrog configuration
+jfrog:
+  url: https://jfrog.example.com
+  username: ${JFROG_USER}
+  password: ${JFROG_PASSWORD}
